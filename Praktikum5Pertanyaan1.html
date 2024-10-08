@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan </title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            background-color: rgb(191, 216, 219); 
+        }
 
+        h1 {
+            background-color: rgb(5, 63, 73); 
+            color:whitesmoke;
+            border-style: solid;;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2 {
+            color: #082129; 
+        }
+        .bahan{
+            background-color: rgb(135, 208, 245);
+            padding: 25px;
+            border-radius: 10px;
+            list-style-type: square; 
+            font-family:'Segoe UI', Tahoma;
+        }
+
+        .cara-membuat{
+            background-color: rgb(170, 203, 219);
+            padding: 25px;
+            border-radius: 10px;
+            list-style-type: square; 
+            font-family:'Gill Sans', 'Gill Sans MT';   
+        }
+
+    img {
+        display: block;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    footer {
+    background-color: #29343a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+
+<h1>Resep Tongseng Sapi</h1>
+<img src="https://th.bing.com/th?id=OIP.8Idk3JHTL6cptrOLQHWcGwHaGp&w=263&h=236&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2" alt="Gambar Tongseng"><br>
+
+<div class="bahan"> 
+<ul>
+<h2>Bahan-bahan</h2>
+  <li>250 gram daging sapi, potong kecil-kecil </li>
+  <li>sdm kecap manis</li>
+  <li>2 lembar daun salam </li>
+  <li>batang serai, memarkan </li>
+  <li>1 lembar daun jeruk </li>
+  <li>sayur kol, iris kasar </li>
+  <li>garam secukupnya </li>
+  <li>gula secukupnya </li>
+  <li>7 siung bawang merah </li>
+  <li>4 siung bawang putih </li>
+  <li>3 butir kemiri </li>
+</ul>
+</div> 
+ <br>
+<div class="cara-membuat">
+    <ol>
+        <h2>Cara Membuat</h2> 
+        <li>Panaskan minyak, lalu tumis bumbu halus.</li>
+        <li>Masukkan daun salam, serai, daun jeruk, lalu tumis hingga harum.</li>
+        <li>Masukkan daging sapi hingga semua permukaannya tercampur bumbu.</li>
+        <li>Tuangkan air hingga daging terendam, kemudian tambahkan garam, gula, kecap manis.</li>
+        <li>Masak hingga daging empuk. Masukkan irisan sayur kol, lalu masak kembali hingga matang. Koreksi rasanya.</li>
+        <li>Tongseng sapi sayur kol siap disajikan.</li>
+    </ol>
+</div>
+<br>
+<button onclick="cekResep()">Cek Resep!</button >
+<button onclick="window.print()">Cetak Resep!</button >
+
+<script type='javascript'>
+
+function cekResep(){
+console.log('Resep Tongseng Sapi');
+}
+</ script >
+
+    <footer>
+        <p>&copy; Ersa Arta Lisa 2024 </p>
+    </footer>
+</body>
+</html>
