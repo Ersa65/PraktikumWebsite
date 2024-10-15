@@ -5,18 +5,37 @@
 </head>
 <body>
     <script>
-        const totalKunjungan = parseInt(prompt("Masukkan total kunjungan ke salon:"));
-        const kupon = totalKunjungan; 
-        const bonusGratis = Math.floor(kupon / 10); 
-        let pesan = "Total Kunjungan: " + totalKunjungan + "\n" +
-                    "Banyak Potongan Kupon: " + kupon + "\n";
-  
-        if (bonusGratis > 0) {
-            pesan += "Selamat! Anda mendapatkan " + bonusGratis + " kunjungan gratis.";
-        } else {
-            pesan += "Anda belum mendapatkan kunjungan gratis.";
-        }
-        alert(pesan);
+        // Fungsi untuk menghitung kupon dan bonus kunjungan
+function hitungKunjungan() {
+    // Meminta input dari user (jumlah kunjungan)
+    let totalKunjungan = prompt("Masukkan total kunjungan yang telah dilakukan:");
+
+    // Mengonversi input ke angka
+    totalKunjungan = parseInt(totalKunjungan);
+
+    // Menghitung kupon yang didapatkan (setiap kunjungan dapat 1 kupon)
+    let jumlahKupon = totalKunjungan;
+
+    // Mengecek apakah pelanggan bisa mendapatkan kunjungan gratis
+    let bonus = Math.floor(jumlahKupon / 10); // Setiap 10 kupon, dapat 1 kunjungan gratis
+
+    // Menampilkan hasil
+    let pesan = `Total kunjungan: ${totalKunjungan}\n` +
+                `Jumlah kupon yang dimiliki: ${jumlahKupon}\n`;
+
+    if (bonus > 0) {
+        pesan += `Pelanggan bisa mendapatkan ${bonus} kunjungan gratis!`;
+    } else {
+        pesan += "Pelanggan belum bisa mendapatkan kunjungan gratis.";
+    }
+
+    // Menampilkan hasil dalam alert
+    alert(pesan);
+}
+
+// Memanggil fungsi untuk menjalankan program
+hitungKunjungan();
+
     </script>
 </body>
 </html>
