@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pengecekan Kelulusan Siswa</title>
+    <script>
+
+const siswa = [
+  { nama: "Andi", nilai: { matematika: 70, biologi: 80, fisika: 70, kimia: 90 } },
+  { nama: "Ria", nilai: { matematika: 90, biologi: 65, fisika: 80, kimia: 70 } },
+  { nama: "Bima", nilai: { matematika: 100, biologi: 70, fisika: 95, kimia: 50 } },
+  { nama: "Toni", nilai: { matematika: 60, biologi: 60, fisika: 70, kimia: 60 } },
+  { nama: "Putri", nilai: { matematika: 70, biologi: 100, fisika: 80, kimia: 75 } }
+];
+
+// Standar kelulusan
+const standarKelulusan = 60;
+
+// Fungsi untuk mengecek apakah siswa lulus atau tidak
+function cekKelulusan(siswa) {
+  const lulus = [];
+  const tidakLulus = [];
+  
+  siswa.forEach((s) => {
+    const { matematika, biologi, fisika, kimia } = s.nilai;
+    if (matematika >= standarKelulusan && biologi >= standarKelulusan && fisika >= standarKelulusan && kimia >= standarKelulusan) {
+      lulus.push(s.nama);
+    } else {
+      tidakLulus.push(s.nama);
+    }
+  });
+
+  if (lulus.length === siswa.length) {
+    console.log("Semua Lulus");
+  } else if (tidakLulus.length === siswa.length) {
+    console.log("Semua Tidak Lulus");
+  } else {
+    if (lulus.length > 0) {
+      console.log("Yang Lulus:", lulus.join(", "));
+    }
+    if (tidakLulus.length > 0) {
+      console.log("Yang Tidak Lulus:", tidakLulus.join(", "));
+    }
+  }
+}
+cekKelulusan(siswa);
+</script>
+</head>
+</html>
