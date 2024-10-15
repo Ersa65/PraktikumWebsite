@@ -7,6 +7,15 @@
 <p> 
 <script language="JavaScript">
   
+
+const lenaMemilikiMembership = true; 
+const rioMemilikiMembership = false;  
+
+
+cekMembership("Lena", lenaMemilikiMembership);
+cekMembership("Rio", rioMemilikiMembership);
+
+
 function cekMembership(nama, memilikiMembership) {
     if (memilikiMembership) {
         console.log(nama + " mendapatkan diskon 5%");
@@ -14,12 +23,6 @@ function cekMembership(nama, memilikiMembership) {
         console.log(nama + " tidak mendapatkan diskon");
     }
 }
-const lenaMemilikiMembership = true; // Lena memiliki membership
-const rioMemilikiMembership = false;  // Rio tidak memiliki membership
-
-// Panggil fungsi untuk mengecek membership
-cekMembership("Lena", lenaMemilikiMembership);
-cekMembership("Rio", rioMemilikiMembership);
   </script> 
 </P> 
 </body> 
