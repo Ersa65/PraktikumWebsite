@@ -1,20 +1,12 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head> 
-    <title>Membership</title>
+    <title>Cek Membership</title>
 </head>
 <body>
 <p> 
 <script language="JavaScript">
-  
-
-const lenaMemilikiMembership = true; 
-const rioMemilikiMembership = false;  
-
-
-cekMembership("Lena", lenaMemilikiMembership);
-cekMembership("Rio", rioMemilikiMembership);
-
+ 
 
 function cekMembership(nama, memilikiMembership) {
     if (memilikiMembership) {
@@ -22,7 +14,14 @@ function cekMembership(nama, memilikiMembership) {
     } else {
         console.log(nama + " tidak mendapatkan diskon");
     }
-}
+} 
+
+const lenaMemilikiMembership = true; 
+const rioMemilikiMembership = false;  
+
+cekMembership("Lena", lenaMemilikiMembership);
+cekMembership("Rio", rioMemilikiMembership);
+
   </script> 
 </P> 
 </body> 
