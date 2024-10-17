@@ -52,8 +52,7 @@ h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid white;
     padding-bottom: 5px;
-    font-size: 1.3em;
-    text-align: center;    
+    font-size: 1.3em;  
 }
 
 .contact ul {
@@ -67,6 +66,7 @@ h2 {
 .contact a {
     color: #fff;
     text-decoration: none;
+    text-align: center;
 }
 
 .contact a:hover {
