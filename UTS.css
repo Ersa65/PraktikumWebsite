@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color:azure ;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
@@ -18,7 +19,7 @@ body {
     max-width: 1100px;
     margin: 20px auto;
     padding: 20px;
-    background-color:rgb(250, 246, 246);
+    background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -96,4 +97,94 @@ footer {
     background-color: #333;
     color: white;
     border-radius: 10px;
+}
+
+/* Media Queries untuk Responsiveness */
+
+/* Untuk layar dengan lebar maksimum 1024px (tablet besar) */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 768px (tablet atau smartphone) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 480px (smartphone kecil) */
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
