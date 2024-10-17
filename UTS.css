@@ -1,15 +1,104 @@
 body {
     font-family: Arial, sans-serif;
 }
-
-h1, h2 {
-    font-weight: bold;
+.wrapper{
+    margin-top: lem;
+    margin-right: auto;
+    margin-bottom: lem;
+    margin-left: auto;
+    max-width: 900px;
+    padding: 1em;
+    box-shadow: 0px 0px 20px 5px rgba(red, green, blue, alpha) ;
+    border-color: pink;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: lem;
+}
+.left-side{
+    padding: lem;
+    background-color: rgb(25, 25, 77);
+    color: white; 
+}
+.img{
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    clip-path: circle(50% at center);
+}
+h1{
+    text-align: center;
 }
 
-.container {
-    margin-bottom: 40px;
+.left-side > hr {
+    color: white;
 }
-
-footer {
-    margin-top: 50px;
+.left-side > ul{
+    font-weight: 300;
+}
+.right-side {
+    padding: lem;
+    grid-template-rows: repeat(4 auto) 1fr;
+}
+.right-side > p {
+    text-align: justify;
+    font-weight: 300;
+}
+.right-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 0.5em;
+}
+.work {
+    display: grid;
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.position {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.Company {
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.date {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.desc {
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-size: 0.8em;
+    text-align: justify;
+    font-weight: 300;
+}
+.study {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+}
+.category {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.school {
+    margin-top: 0px;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+    font-size: 0.8em;
 }
